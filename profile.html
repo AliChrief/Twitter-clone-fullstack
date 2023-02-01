@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="frontend/css/profile.css">
+    <title>profile</title>
+</head>
+<body>
+    <!-- left Side Bar Navigation Section -->
+    <header>
+        <div class="list-container">
+            <div class="logo">
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div id="home">
+                <i class="fa-solid fa-house-user"></i>
+                <span>Home</span>
+            </div>
+            <div id="profile">
+                <i class="fa-solid fa-user"></i>
+                <span>Profile</span>
+            </div>
+            <button class="btn large small">Tweet</button>
+            <div class="left-profile">
+                <img src="./assets/images/grey-person-icon.jpg" id="left-profile-img">
+                <div class="left-user-profile">
+                    <span class="left-first-name">Ali </span>
+                    <span class="left-last-name">Chrief</span><br>
+                    <div class="left-hashtag-name">@Yabn fatima</div>
+                </div>
+                <i class="fa-solid fa-ellipsis"></i>
+            </div>
+        </div>
+    </header>
+    <main>
+    <!-- User Profile Section -->
+        <section class="logged-section">
+            <div class="logged-user">
+                <div class="logged-username"></div>
+                <div class="tweet-nb">0 Tweets</div>
+            </div>
+            <div class="empty"></div>
+            <div class="logged-username-profile"><img id="my-profile" src="./assets/images/user-profile-icon.jpg"></div>
+            <button type="button" class="btn black" id="edit">Edit profile</button>
+            <div class="logged-user-info">
+                <div class="logged-username"></div>
+                <div class="logged-name"></div>
+                <div class="my-bio">My Bio</div>
+                <div class="date-of-join"></div>
+                <div class="logged-interest">
+                    <div class="following"></div>
+                    <div class="follower"></div>
+                </div>
+            </div>
+        </section>
+        <!-- Search User Section -->
+        <section class="search">
+            <div class="search-tab">
+                <input type="text"  placeholder="Search Twitter">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <div class="user-to-search">
+             
+            </div>
+        </section>
+        <section class="tweet-container">
+            <div class="text">
+
+            </div>
+        </section>
+        
+    </main>
+    <!-- Update User Profile Popup -->
+    <div class="update-popup">
+        <div class="edit-profile">
+            <div>Edit profile</div>
+            <button class="btn black" id="save">save</button>
+        </div>
+        <div class="empty"></div>
+       
+        <label for="file" id="new-img"><div class="logged-username-profile"><img id="my-new-profile" src="./assets/images/twitter-cover-page.png"></div></label>
+        <input type="file" id="file" accept=".png,.jpg" style="display: none;">
+        <div class="identity-container">
+            <div class="new-identity">
+                <input type="text" id="first-name" placeholder="First Name">
+            </div>
+
+            <div class="new-identity">
+                <input type="text" id="last-name" placeholder="Last Name">
+            </div>
+
+            <div class="new-identity">
+                <input type="text" id="Bio" placeholder="Bio">
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/67f0fe1c06.js" crossorigin="anonymous"></script>
+    <script src="http://localhost/twitter-clone-full/frontend/js/profile.js"></script>
+</body>
+</html>
