@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Frontend/css/home.css">
+    <title>home</title>
+</head>
+<body>
+    <!-- left Side Bar Navigation Section -->
+    <header>
+        <div class="list-container">
+            <div class="logo">
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div id="home">
+                <i class="fa-solid fa-house-user"></i>
+                <span>Home</span>
+            </div>
+            <div id="profile">
+                <i class="fa-solid fa-user"></i>
+                <span>Profile</span>
+            </div>
+            <button class="btn large to-tweet">Tweet</button>
+            <div class="left-profile">
+                <img src="./assets/images/grey-person-icon.jpg" id="left-profile-img">
+                <div class="left-user-profile">
+                    <span class="left-first-name">Ali </span>
+                    <span class="left-last-name">Chrief</span><br>
+                    <div class="left-hashtag-name">@Yabn fatima</div>
+                </div>
+                <i class="fa-solid fa-ellipsis"></i>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Tweet Section -->
+        <section class="tweet-container">
+            <div class="tweet">
+                <div class="info">
+                    <div class="username-profile"><img id="my-profile" src="/assets/images/pp.png"></div>
+                    <div><input type="text" id='content' placeholder="What's happening?"></div>
+                </div>
+                <div class="tweet-content">
+                    <label for="file" id="icon"><i class="fa-sharp fa-solid fa-upload"></i></label>
+                    <input type="file" id="file" accept=".png,.jpg" style="display: none;">
+                    <div><button class="btn small to-tweet">Tweet</button></div>
+    
+                </div> 
+            </div>
+            <!-- Tweet content section -->
+            <div class="text">
+
+            </div>
+        </section>
+        <!-- User Search  section  -->
+        <section class="search">
+            <div class="search-tab">
+                <input type="text"  placeholder="Search Twitter">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                </div><div class="user-to-search">
+            </div>
+        </section>
+    </main>
+    <script src="https://kit.fontawesome.com/67f0fe1c06.js" crossorigin="anonymous"></script>
+    <script src="http://localhost/twitter-clone-full/frontend/js/home.js"></script>
+</body>
+</html>
