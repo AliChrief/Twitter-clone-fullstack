@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="sign-up.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="/assets/images/twitter-logo.png" />
+  <title>Twitter. It's what's happening</title>
+</head>
+
+<body>
+
+  <section class="container flex-container">
+    <img class="signup-img" src="../../assets/images/twitter-cover-page.png" alt="img" />
+    <div class="container flex-column-container register-content">
+      <div class="register-logo-twitter">
+        <img src="../../assets/images/twitter-logo.png" alt="" />
+      </div>
+      <h1 class="register-title">Happening now</h1>
+      <p class="register-subtitle">Join Twitter today.</p>
+
+      <label for="name" id="test">Name *</label>
+      <div class="flex-container name-container">
+        <input id="firstname" type="text" placeholder="First name" />
+        <input id="lastname" type="text" placeholder="Last name" minlength="20" />
+      </div>
+
+      <label for="date-birth">Date of birth</label>
+      <input type="date" />
+      
+      <label for="Username">Username *</label>
+      <input id="username" type="text" placeholder="username" />
+      <p class="hide-error" id="username-error"></p>
+
+      <label for="email">Email *</label>
+      <input id="email" type="email" placeholder="email" />
+      <p class="hide-error" id="email-error"></p>
+
+      <label for="password">Password *</label>
+      <input id="password" type="password" placeholder="password" />
+      <p class="hide-error" id="password-error"> </p>
+
+      <button id="sign-up-btn" class="btn btn-blue" type="button">
+        Sign up
+      </button>
+
+      <div>
+        <p class="register-parag1">
+          By signing up, you agree to the
+          <a href="">Terms of Service</a>
+          and
+          <a href="">Privacy Policy</a>
+          , including
+          <a href="">Cookie Use.</a>
+        </p>
+        <p class="register-parag2">Already have an account?</p>
+        <button id="register-signin" class="btn btn-white register-signin" type="button">
+          Sign in
+        </button>
+      </div>
+
+    </div>
+  </section>
+  <!-- 
+    Footer
+    -->
+  <footer class="register-footer">
+    <p>
+      <a href="">About</a>
+      <a href="">Help Center</a>
+      <a href="">Terms of Service</a>
+      <a href="">Privacy Policy</a>
+      <a href="">Cookie Policy</a>
+      <a href="">Accessibility</a>
+      <a href="">Ads info</a>
+      <a href="">Blog</a>
+      <a href="">Status</a>
+      <a href="">Careers</a>
+      <a href="">Brand Resources</a>
+      <a href="">Advertising</a>
+      <a href="">Marketing</a>
+      <a href="">Twitter for Business</a>
+      <a href="">Developers</a>
+      <a href="">Directory</a>
+      <a href="">Settings</a>
+      © 2022 Twitter, Inc.
+    </p>
+  </footer>
+  <script src="http://localhost/twitter-clone-full/frontend/Register/sign-up.js"></script>
+</body>
+
+</html>

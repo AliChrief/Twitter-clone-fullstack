@@ -1,0 +1,162 @@
+/*
+Utilities 
+*/
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+  }
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.flex-column-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.flex-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.btn {
+  border-radius: 20px;
+  border: none;
+  padding: 10px 30px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.7s;
+}
+
+.btn-blue {
+  background-color: #1d9bf0;
+  color: white;
+}
+.btn-white {
+  background-color: white;
+  color: #1d9bf0;
+  border: solid 1px #999999;
+}
+.btn:hover{
+  transform: scale(1.1);
+}
+.hide-error{
+  display: none;
+  font-size: 11px;
+  color: red;
+  padding-top: 2px;
+}
+.show-error{
+  display: block;
+}
+
+.red{
+  border-color: red;
+}
+/* Hero */
+.signup-img {
+  width: 55vw;
+  height: 100vh;
+}
+.register-content {
+  padding-left: 20px;
+  min-height: 100vh;
+  justify-content: center;
+}
+.register-logo-twitter {
+  width: 24px;
+  height: 24px;
+  margin: 15px;
+  margin-left: 0;
+}
+.register-title {
+  font-size: 45px;
+  font-weight: bolder;
+  margin: 10px 0;
+}
+.register-subtitle {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+label {
+  padding: 6px 0; 
+  font-size: 16px;
+}
+input {
+  width:200px;
+  border: 1px solid #cfd9de;
+  border-radius: 7px;
+  padding: 8px;
+  font-size: 14px;
+  outline-color: rgb(132, 196, 218);
+}
+.name-container {
+  width: 100%;
+}
+
+/* Register paragraph */
+.register-parag1 {
+  margin: 7px 0;
+  width: 90%;
+  font-size: 12px;
+}
+.register-parag1 a {
+  color: #1d9bf0;
+}
+.register-parag1 a:hover {
+  text-decoration: underline;
+}
+.register-parag2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 20px 0 15px;
+}
+.register-signin {
+  font-size: 16px;
+  padding: 7px 28px;
+}
+.register-signin:hover {
+  text-decoration: none;
+}
+
+/* footer */
+.register-footer {
+  font-size: 12px;
+  color: #6e6b6b;
+  padding: 15px;
+  text-align: center;
+}
+.register-footer a {
+  color: #6e6b6b;
+  padding-right: 16px;
+}
+
+
+
+/* Responsiveness */
+@media only screen and (max-width: 1000px) {
+  .signup-img {
+    display: none;
+  }
+  .register-content {
+    width: 70vw;
+  }
+  .cover-img-after {
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+    padding-right: 20px;
+  }
+}

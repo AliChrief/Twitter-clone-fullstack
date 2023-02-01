@@ -1,0 +1,148 @@
+/* Nav && Search */
+@import "style.css";
+
+main{
+    width:42%;
+    margin-left: 29%;
+    border-left: 1px solid #eff3f4;
+    border-right: 1px solid #eff3f4;
+    min-height: 100vh;
+}
+/* Profile */
+.logged-section{
+    width:100%;
+}
+.logged-user{
+    margin:5px 0px 4px 50px;
+}
+.logged-username{
+    font-size: 18px;
+    font-weight: bold;
+}
+.tweet-nb{
+    padding-top: 3px ;
+    font-size: 13px;
+    color: #536471;
+}
+.empty{
+    width:100%;
+    background-color: #cfd9de;
+    height: 200px;
+}
+
+.logged-username-profile{
+    width:135px;
+    height:135px;
+    margin: 20vh 0vh 0vh 5vh;
+    border-radius: 50%;
+    position: relative;
+    bottom: 195px;
+}
+
+
+.logged-username-profile > img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+.logged-username-profile > img:hover{
+    cursor: pointer;
+    opacity:.9;
+    transition: all 0.6s;
+}
+#my-profile{
+    cursor:default;
+}
+.logged-section>button{
+    background-color: white;
+    color: black;
+    border: 2.5px solid #e2e8eb;
+    width: 88px;
+    height: 32px;
+    position: relative;
+    left: 410px;
+    bottom: 233px;
+    font-weight: bolder;
+    font-size:13px;
+    
+}
+.logged-section>button:hover{
+    transition: all 0.6s;
+    background-color: #e2e8eb;
+}
+ 
+.logged-user-info{
+    height: 200px;
+    width: 100%;
+    position: relative;
+    bottom: 210px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+.logged-name{
+    margin-top: -22px;
+    color:#7b8892 ;
+}
+
+.logged-interest{
+    display: flex;
+}
+.logged-interest>div{
+    margin-right:20px;
+}
+/* End profile */
+
+/* Start profile-edit  */
+.update-popup{
+    width:45vw;
+    height: 75vh;
+    position: absolute;
+    text-align: center;
+    box-shadow: 10px 10px white;
+    right: 26vw;
+    top: 12vh;
+    background-color: #fff;
+    border-radius: 13px;
+    box-shadow: -0.5px 0.5px 7px rgb(1 1 1 / 15%);
+    overflow-y: scroll;
+    opacity: 1;
+    display: none;
+    
+}
+.identity-container{
+    margin-top: -20vh;
+}
+
+.edit-profile{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    align-items: center;
+}
+.edit-profile>div{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.new-identity>input{
+    width:90%;
+    height: 50px;
+    border: 1px solid #cfd9de;
+    border-radius: 7px;
+    padding: 10px;
+    font-size: 16px;
+    outline-color: rgb(132, 196, 218);
+    margin: 0 20px 20px 20px;
+}
+
+.front{
+    display: block;
+}
+.back{
+    opacity: .5;
+}
+/* End profile-edit  */

@@ -1,0 +1,51 @@
+/* Nav && search */
+@import "style.css";
+
+img{
+    height: 100%;
+}
+main{
+    width:42%;
+    margin-left: 29%;
+    border-left: 1px solid #eff3f4;
+    border-right: 1px solid #eff3f4;
+    min-height: 100vh;
+}
+/* Start tweet */
+#file{
+    display: none;
+}
+#icon{
+    cursor: pointer;
+}
+.info{
+    display: flex;
+    margin-left:4vw;
+    align-items: center;
+    padding-top:15px;
+}
+.info > div:nth-child(2){
+    margin-left: 2vw;
+    width: 100%;  
+}
+.info > :nth-child(2) > input{
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+}
+.tweet-content > i {
+    cursor: pointer;
+}
+.tweet-content{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5vh 0;
+}
+.small{
+    width: 8vw;
+    height: 7vh;
+    font-size: 16px;
+}
+/* End tweet */
