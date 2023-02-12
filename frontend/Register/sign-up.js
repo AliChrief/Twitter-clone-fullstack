@@ -29,25 +29,25 @@ const store = () =>
             emailError.classList.add('show-error')
         }
         // Password Validation
-        if (password.value.match(/[A-Z]/ || password.value.match(/[a-z]/ ) ) || password.value.match(/\d/) || password.value.match(/\W/) || password.value.length > 12  )  {
+        if (password.value.match(/[A-Z]/ && password.value.match(/[a-z]/ ) ) && password.value.match(/\d/) && password.value.match(/\W/) && password.value.length > 6  )  {
             password.classList.remove('red')
             passwordError.classList.remove('show-error')
             checker--
         }
         else{
             password.classList.add('red')
-            passwordError.innerHTML = '* Password should contain at least Uppercase LowerCase symbol digit'
+            passwordError.innerHTML = '* Password should contain at least one Uppercase LowerCase Symbol Digit and more than 8 characters '
             passwordError.classList.add('show-error')
         }
         // Username validation
-        if(username.value.length > 4){
+        if(username.value.length > 8){
             username.classList.remove('red')
             userNameError.classList.remove('show-error')
             checker--
     
         }else{
             username.classList.add('red')
-            userNameError.innerHTML = '* Username should be greater than 4 character'
+            userNameError.innerHTML = '* Username should be greater than 8 character'
             userNameError.classList.add('show-error')
         }
         // Check if all conditions are satisfied
@@ -61,7 +61,7 @@ const store = () =>
         formData.append("lastName",lastName.value)
     
         //  fetch the data into database 
-        fetch('http://localhost/twitter-clone-full/backend/register.php', {
+        fetch('http://localhost/twitter-clone-fullstack/backend/register.php', {
               method: 'POST',
               body:formData
             })
@@ -99,7 +99,7 @@ const store = () =>
 }
 
 const logInPage = () => {
-    window.location.href='http://localhost/twitter-clone-full/frontend/Login/sign-in.html'
+    window.location.href='http://localhost/twitter-clone-fullstack/frontend/Login/sign-in.html'
 }
  
 signUp.addEventListener('click',store)

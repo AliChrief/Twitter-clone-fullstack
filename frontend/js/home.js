@@ -16,15 +16,15 @@ const myUserName = document.querySelector('.left-hashtag-name')
 let imgData 
 
 profile.addEventListener('click', () => {
-    location.replace("http://localhost/twitter-clone-full/profile.html")// navigate to  profile
+    location.replace("http://localhost/twitter-clone-fullstack/profile.html")// navigate into profile
 })
 
 home.addEventListener('click', () => {
-    location.replace("http://localhost/twitter-clone-full/index.html") // navigate to the home page
+    location.replace("http://localhost/twitter-clone-fullstack/index.html") // navigate into home page
 })
 // Load User Profile
 const profileLoad = () => {
-    fetch(`http://localhost/twitter-clone-full/backend/profile.php?USER_ID=${id}`)
+    fetch(`http://localhost/twitter-clone-fullstack/backend/profile.php?USER_ID=${id}`)
     .then(response => response.json())
     .then(data => {
         userProfiles = data.user
@@ -40,7 +40,7 @@ const profileLoad = () => {
 // Load tweet 
 const loadData = () => {
 
-    fetch('http://localhost/twitter-clone-full/backend/view_feed.php')
+    fetch('http://localhost/twitter-clone-fullstack/backend/view_feed.php')
     .then(response => response.json())
     .then(data => {
         const userInfo = data[0]
@@ -115,7 +115,7 @@ const loadData = () => {
                 const likeData = new FormData()
                 likeData.append('username',localStorageUserName)
                 likeData.append('tweetId',e.target.parentElement.firstChild.innerHTML)
-                fetch(`http://localhost/twitter-clone-full/backend/like_user.php`, {
+                fetch(`http://localhost/twitter-clone-fullstack/backend/like_user.php`, {
                     method: 'POST',
                     body:likeData 
                     })
@@ -133,14 +133,14 @@ tweet.forEach(btn => {
     const formData = new FormData()
     const tweetText = inputText.value
     let d = new Date()
-    let date = `${d.getMonth()}-${d.getDate()}-${d.getFullYear()}`
+    let date = `${d.getMonth()+1}-${d.getDate()}-${d.getFullYear()}`
     formData.append("text",tweetText)
     formData.append('date', date)
     formData.append('user_id',id)
 
 
 
-    fetch(`http://localhost/twitter-clone-full/backend/tweet.php`, {
+    fetch(`http://localhost/twitter-clone-fullstack/backend/tweet.php`, {
     method: 'POST',
     body:formData 
     })
@@ -160,7 +160,7 @@ search.addEventListener('click', () => {
      const searchName = new FormData()
      searchName.append('name', searchInput.value)
      searchName.append('user_id',id)
-     fetch('http://localhost/twitter-clone-full/backend/search_user.php',{
+     fetch('http://localhost/twitter-clone-fullstack/backend/search_user.php',{
         method:'POST',
         body:searchName
     })
@@ -249,7 +249,7 @@ search.addEventListener('click', () => {
                 let followData = new FormData()
                 followData.append('user_id',id)
                 followData.append('userName',sliceChild)
-                fetch('http://localhost/twitter-clone-full/backend/follow_user.php',{
+                fetch('http://localhost/twitter-clone-fullstack/backend/follow_user.php',{
                     method:'POST',
                     body:followData
                 })
@@ -274,7 +274,7 @@ search.addEventListener('click', () => {
                 let blockData = new FormData()
                 blockData.append('user_id',id)
                 blockData.append('userName',sliceChildBlock)
-                fetch('http://localhost/twitter-clone-full/backend/block_user.php',{
+                fetch('http://localhost/twitter-clone-fullstack/backend/block_user.php',{
                     method:'POST',
                     body:blockData
                 })

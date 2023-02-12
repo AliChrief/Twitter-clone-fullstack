@@ -7,7 +7,7 @@ const errorRemove = document.querySelectorAll('.error-remove')
 
 // Register page
 const register = () => {
-    window.location.href='http://localhost/twitter-clone-full/frontend/Register/sign-up.html'
+    window.location.href='http://localhost/twitter-clone-fullstack/frontend/Register/sign-up.html'
 }
 
 // Check login process
@@ -28,7 +28,7 @@ const checkLogin = () =>
     const form = new FormData()
     form.append('user-input', userInput.value)
     form.append('password', passwordInput.value)
-    fetch('http://localhost/twitter-clone-full/backend/login.php',{
+    fetch('http://localhost/twitter-clone-fullstack/backend/login.php',{
 
         method: 'POST',
         body: form
@@ -54,7 +54,7 @@ const checkLogin = () =>
             let username = data[0].username
             localStorage.setItem('user_id',user_id)
             localStorage.setItem('username',username)
-            location.replace("http://localhost/twitter-clone-full/index.html")
+            location.replace("http://localhost/twitter-clone-fullstack/index.html")
         }  
     })
  }    
